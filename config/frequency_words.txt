@@ -2,53 +2,56 @@
 #          TrendRadar 频率词配置 — 币圈资讯
 # ═══════════════════════════════════════════════════════════════
 
+# ───────────────────────────────────────────────────────────────
+#                        全局过滤区
+# ───────────────────────────────────────────────────────────────
 [GLOBAL_FILTER]
 震惊
 
-# ═══════════════════════════════════════════════════════════════
-#                        币圈关键词
-# ═══════════════════════════════════════════════════════════════
+
+# ───────────────────────────────────────────────────────────────
+#                        词组定义区
+# ───────────────────────────────────────────────────────────────
+[WORD_GROUPS]
 
 [比特币 BTC]
-/比特币|\bBTC\b|\bBitcoin\b/
-+比特币
-!比特币现金
+/比特币|\bBTC\b|\bBitcoin\b/ => 比特币
 
 [以太坊 ETH]
-/以太坊|\bETH\b|\bEthereum\b/
+/以太坊|\bETH\b|\bEthereum\b/ => 以太坊
 
 [主流币行情]
-/币圈|加密货币|数字货币|\bcrypto\b|\bcryptocurrency\b/
-/SOL|Solana|索拉纳/
-/USDT|泰达币/
-/BNB|币安币/
-/XRP|瑞波/
-/DOGE|狗狗币/
-/SHIB|柴犬币/
-/AVAX|雪崩/
-/ADA|艾达币/
-/DOT|波卡/
-/MATIC|Polygon/
-/LINK|Chainlink/
+/币圈|加密货币|数字货币|\bcrypto\b|\bcryptocurrency\b/ => 币圈
+/SOL|Solana|索拉纳/ => SOL
+/USDT|泰达币/ => USDT
+/BNB|币安币/ => BNB
+/XRP|瑞波/ => XRP
+/DOGE|狗狗币/ => DOGE
+/SHIB|柴犬币/ => SHIB
+/AVAX|雪崩/ => AVAX
+/ADA|艾达币/ => ADA
+/DOT|波卡/ => DOT
+/MATIC|Polygon/ => MATIC
+/LINK|Chainlink/ => LINK
 
 [交易所与平台]
-/币安|赵长鹏|\bBinance\b|\bCZ\b/
-/欧易|\bOKX\b/
-/火币|\bHuobi\b/
-/Coinbase|Coinbase上市/
-/FTX|SBF|萨班/
+/币安|赵长鹏|\bBinance\b|\bCZ\b/ => 币安
+/欧易|\bOKX\b/ => 欧易OKX
+/火币|\bHuobi\b/ => 火币
+/Coinbase/ => Coinbase
+/FTX|SBF|萨班/ => FTX
 
 [监管政策]
-/SEC|Gary Gensler|根斯勒/
-/香港Web3|香港加密|香港虚拟资产/
-/加密监管|加密货币监管|币圈监管|比特币ETF|以太坊ETF/
-/digital asset|crypto regulation/
+/SEC|Gary Gensler|根斯勒/ => SEC监管
+/香港Web3|香港加密|香港虚拟资产/ => 香港Web3
+/加密监管|加密货币监管|币圈监管|比特币ETF|以太坊ETF/ => 加密监管
+/digital asset|crypto regulation/ => 海外监管
 
 [DeFi与生态]
-/DeFi|去中心化金融/
-/NFT|数字藏品/
-/质押|Staking|流动性质押/
-/Airdrop|空投/
-/稳定币|stablecoin/
-/链上|on-chain|链上数据/
-/L2|Layer2|二层网络|Arbitrum|Optimism/
+/DeFi|去中心化金融/ => DeFi
+/NFT|数字藏品/ => NFT
+/质押|Staking|流动性质押/ => 质押
+/Airdrop|空投/ => 空投
+/稳定币|stablecoin/ => 稳定币
+/链上|on-chain|链上数据/ => 链上数据
+/L2|Layer2|二层网络|Arbitrum|Optimism/ => L2扩展

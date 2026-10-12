@@ -51,9 +51,9 @@ rss:
     - id: "cointelegraph"
       name: "Cointelegraph"
       url: "https://cointelegraph.com/rss"
-    - id: "bitcoinist"
-      name: "Bitcoinist"
-      url: "https://bitcoinist.com/feed/"
+    - id: "thedefiant"
+      name: "The Defiant"
+      url: "https://thedefiant.io/feed"
     - id: "decrypt"
       name: "Decrypt"
       url: "https://decrypt.co/feed"
@@ -167,7 +167,7 @@ ai_analysis:
   enabled: true
   language: "Chinese"
   prompt_file: "ai_analysis_prompt.txt"
-  mode: "follow_report"
+  mode: "incremental"
   max_news_for_analysis: 150
   include_rss: true
   include_standalone: false
