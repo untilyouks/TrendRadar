@@ -68,8 +68,8 @@ report:
   mode: "incremental"
   display_mode: "keyword"
   sort_by_position_first: false
-  rank_threshold: 5
-  max_news_per_keyword: 0
+  rank_threshold: 3
+  max_news_per_keyword: 3
 
 filter:
   method: "keyword"
@@ -93,8 +93,8 @@ display:
     - ai_analysis
   regions:
     hotlist: true
-    new_items: true
-    rss: true
+    new_items: false
+    rss: false
     standalone: false
     ai_analysis: true
   standalone:
@@ -168,7 +168,7 @@ ai_analysis:
   language: "Chinese"
   prompt_file: "ai_analysis_prompt.txt"
   mode: "incremental"
-  max_news_for_analysis: 150
+  max_news_for_analysis: 50
   include_rss: true
   include_standalone: false
   include_rank_timeline: false
